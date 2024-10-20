@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="556.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ndh.controller.ChatController">
+
+    <!-- Tiêu đề của tab chat -->
+    <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Chat" />
+
+    <SplitPane dividerPositions="0.5" orientation="HORIZONTAL">
+
+        <!-- Cột bên trái hiển thị danh sách người dùng -->
+        <VBox prefWidth="200" spacing="10">
+            <Label style="-fx-font-size: 16px;" text="Danh sách người dùng" />
+            <ListView fx:id="userListView" prefHeight="400" />
+        </VBox>
+
+        <!-- Khu vực bên phải hiển thị nội dung chat với người dùng đã chọn -->
+        <VBox prefWidth="400" spacing="10">
+            <Label fx:id="selectedUserLabel" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Tin nhắn với: " />
+            
+            <TextArea fx:id="chatTextArea" editable="false" prefHeight="400" wrapText="true" />
+
+            <!-- Khu vực nhập tin nhắn mới -->
+            <HBox spacing="10">
+                <TextField fx:id="messageInput" prefWidth="300" promptText="Nhập tin nhắn..." />
+                <Button onAction="#sendMessage" text="Gửi" />
+            </HBox>
+        </VBox>
+
+    </SplitPane>
+
+</VBox>
