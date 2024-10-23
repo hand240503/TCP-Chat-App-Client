@@ -1,0 +1,79 @@
+.paren {
+	-fx-background-color: #FFFFFF;
+}
+
+.sidebar {
+	-fx-background-color: #0091FF;
+}
+
+.transparent {
+	-fx-background-color: transparent;
+}
+
+.searchbox {
+	-fx-background-color: #E4E9EA; /* Màu nền */
+	-fx-border-color: #E4E9EA; /* Màu viền */
+	-fx-border-width: 1px; /* Độ dày viền */
+	-fx-border-radius: 10px; /* Bo góc với bán kính 10px */
+	-fx-background-radius: 10px; /* Bo góc nền với bán kính 10px */
+}
+
+.vbox-border {
+	-fx-border-color: #D6E9BA;
+	-fx-border-radius: 5;
+	/* Bán kính góc border */
+	-fx-border-width: 1; /* Độ dày border */
+	-fx-padding: 0; /* Padding bên trong */
+	-fx-background-color: -fx-control-inner-background;
+	-fx-border-radius: 5; /* Màu nền giống như mặc định */
+}
+
+.list-view {
+	-fx-border-color: transparent transparent #D6E9BA transparent;
+	/* Chỉ màu border trên cùng */
+	-fx-border-width: 1 0 0 0;
+	/* Đặt độ dày cho từng cạnh: top, right, bottom, left */
+	-fx-background-color: #FFFFFF;
+}
+
+.custom-icon {
+	-fx-fill: white;
+	-fx-opacity: 1;
+	-fx-transition: opacity 0.3s ease;
+}
+
+/* Hiệu ứng khi hover vào HBox */
+.custom-hbox:hover .custom-icon {
+	-fx-opacity: 0.5; /* Mờ đi khi hover vào HBox */
+}
+
+.custom-hbox.active {
+	-fx-background-color: #006EDC;
+}
+
+.custom-hbox .custom-icon {
+	-fx-fill: white;
+}
+
+.scroll-pane:focused {
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+}
+
+.scroll-bar:focused {
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+}
+
+.user-cell {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+}
+
+.user-cell:hover {
+	-fx-background-color: #CEE2FF;
+}
+
+.user-cell.active {
+	-fx-background-color: #CEE2FF;
+}

@@ -17,7 +17,7 @@
             <children>
                 <VBox prefHeight="200.0" prefWidth="100.0">
                     <children>
-                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="104.0" styleClass="sidebar" stylesheets="@../style/main_chat.css">
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="100.0" styleClass="sidebar" stylesheets="@../style/main_chat.css">
                             <children>
                                 <HBox id="chatBtn" fx:id="chatBtn" alignment="CENTER" layoutY="76.0" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="100.0" styleClass="custom-hbox">
                                     <children>
@@ -38,7 +38,7 @@
                         </Pane>
                     </children>
                 </VBox>
-                <VBox maxWidth="-Infinity" prefHeight="720.0" prefWidth="317.0" styleClass="vbox-border">
+                <VBox maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="300.0" styleClass="vbox-border">
                     <children>
                         <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="260.0" styleClass="searchbox">
                             <VBox.margin>
@@ -57,7 +57,7 @@
                                 </TextField>
                             </children>
                         </HBox>
-					<ScrollPane fx:id="scrollPane" fitToWidth="true" hbarPolicy="NEVER" prefHeight="36.0" prefWidth="332.0" vbarPolicy="AS_NEEDED">
+					<ScrollPane fx:id="scrollPane" fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED">
 					    <VBox fx:id="listView" maxWidth="354.0" prefWidth="354.0" styleClass="list-view">
 					        <opaqueInsets>
 					            <Insets />

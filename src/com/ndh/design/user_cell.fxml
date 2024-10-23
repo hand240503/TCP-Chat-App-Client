@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+
+<HBox fx:id="userCellBox" alignment="CENTER" prefHeight="80.0" prefWidth="300.0" spacing="10.0" styleClass="user-cell" stylesheets="@../style/main_chat.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ndh.controller.UserCellController">
+   <children>
+      <Pane prefHeight="80.0" prefWidth="372.0">
+         <children>
+            <Circle fx:id="avatar" fill="DODGERBLUE" layoutX="44.0" layoutY="40.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="status" fill="DODGERBLUE" layoutX="68.0" layoutY="60.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="lbNameUser" layoutX="95.0" layoutY="10.0" text="Nguyễn Đăng Hạ" />
+            <Label fx:id="lbTime" layoutX="251.0" layoutY="10.0" text="2 giờ" />
+            <Label fx:id="lbChat" layoutX="95.0" layoutY="44.0" text="Bạn : OK" />
+         </children>
+      </Pane>
+   </children>
+</HBox>
